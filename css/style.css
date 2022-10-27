@@ -78,4 +78,32 @@ div.searchdiv {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    min-height: 550px;
+}
+
+.out img {
+    display: flex;
+    max-width: 200px;
+    margin: 14px;
+}
+
+/* !!!!! FOOTER SECTION !!!!! */
+
+footer {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    height: 100px;
+    text-align: center;
+  }
+  
+  footer h2 {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    padding-top: 40px;
+  }
+
+/* !!!!! MEDIA SCREEN SIZING SECTION !!!!! */
+
+@media only screen and (max-width: 720px) {
+    
 }
