@@ -38,4 +38,10 @@ nav li a {
 nav li a:hover {
     color: rgb(100, 127, 144);
 }
-  
+
+div.searchbar {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
