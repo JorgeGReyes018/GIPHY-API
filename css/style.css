@@ -69,3 +69,13 @@ div.searchdiv {
 	-webkit-transition:opacity 200ms ease;
 	transition:opacity 200ms ease;
 }
+
+/* !!!!! OUTPUT SECTION !!!!! */
+
+.out {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
