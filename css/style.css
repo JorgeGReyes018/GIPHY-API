@@ -1,9 +1,11 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-  
+
 body {
     background-color: rgb(60, 60, 60);
+    overflow: hidden  ;
+    width: 100%;
 }
   
 /* !!!!! NAVBAR/HEADER !!!!! */
@@ -22,12 +24,14 @@ header {
   
 nav {
     margin: 30px 20px 0;
+    position: absolute;
+    right: 0;
 }
   
 nav li {
     display: inline;
     font-size: 18px;
-    margin: 30px;
+    margin: 20px;
 }
   
 nav li a {
@@ -37,6 +41,10 @@ nav li a {
 
 nav li a:hover {
     color: rgb(100, 127, 144);
+}
+
+nav li.trigram {
+    display: none;
 }
 
 /* !!!!! SEARCH SECTION !!!!! */
@@ -52,7 +60,7 @@ div.searchdiv {
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     margin:30px;
-    width: 20%;
+    width: 400px;
 }
 
 #btnS {
@@ -79,7 +87,6 @@ div.searchdiv {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 430px;
 }
 
 .out img {
@@ -95,6 +102,13 @@ footer {
     color: white;
     height: 100px;
     text-align: center;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    bottom:0px;
+    margin-top:345px;
   }
   
   footer h2 {
@@ -104,7 +118,71 @@ footer {
   }
 
 /* !!!!! MEDIA SCREEN SIZING SECTION !!!!! */
-
-@media only screen and (max-width: 720px) {
-
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    header {
+        height: 113px;
+        width: 100%;
+    }
+    .title {
+        width: 80px;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (max-width: 767px) {
+    body {
+        background-color: yellow;
+        width: 100%;
+    }
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.trigram {
+        display: flex;
+        float: right;
+        margin: 40px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive {
+        position: relative;
+        background: rgb(40, 40, 40);
+        width: 180px;
+        margin-top: 66px;
+        margin-right: ;
+    }
+    ul.topnav.responsive li {
+        display: inline-flex;
+        text-align: right;
+    }
+    ul.topnav.responsive li a {
+        display: flex;
+        text-align: right;
+    }
+    #search {
+        width: 100px;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    #search {
+        width: 300px;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
 }
