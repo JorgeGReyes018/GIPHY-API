@@ -44,7 +44,8 @@ nav li a:hover {
 div.searchdiv {
     color: white;
     text-align: center;
-    margin: 20px auto;
+    margin: 80px auto;
+
 }
 
 #search {
@@ -74,11 +75,11 @@ div.searchdiv {
 
 .out {
     margin: auto;
-    width: 90%;
+    width: 88%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 550px;
+    min-height: 430px;
 }
 
 .out img {
@@ -105,5 +106,5 @@ footer {
 /* !!!!! MEDIA SCREEN SIZING SECTION !!!!! */
 
 @media only screen and (max-width: 720px) {
-    
+
 }
