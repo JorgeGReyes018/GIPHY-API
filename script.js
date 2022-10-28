@@ -25,6 +25,7 @@ function search() {
         })
     } );
 }
+
 // ***** DROPDOWN MENU ON TRIGRAM *****
 function dropdownmenu() {
     var x = document.getElementById("trigramclick");

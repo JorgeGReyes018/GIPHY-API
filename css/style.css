@@ -1,10 +1,11 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
+html {
+    height: 100%;
+}
 body {
     background-color: rgb(60, 60, 60);
-    overflow: hidden  ;
     width: 100%;
 }
   
@@ -12,11 +13,14 @@ body {
   
 header {
     background-color: rgb(40, 40, 40);
+    position: fixed;
+    top: 0;
     display: flex;
     color: white;
+    width: 100%;
     padding: 10px;
 }
-  
+
 .title a {
     text-decoration: none;
     color: black;
@@ -52,7 +56,7 @@ nav li.trigram {
 div.searchdiv {
     color: white;
     text-align: center;
-    margin: 80px auto;
+    margin: 193px auto;
 
 }
 
@@ -72,26 +76,23 @@ div.searchdiv {
     font-weight:400;
 }
 
-#btnS:hover {
-    opacity:0.78;
-  
-	-webkit-transition:opacity 200ms ease;
-	transition:opacity 200ms ease;
-}
-
 /* !!!!! OUTPUT SECTION !!!!! */
 
 .out {
     margin: auto;
-    width: 88%;
+    margin-bottom: 20px ;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 400px;
     align-items: center;
 }
 
 .out img {
     display: flex;
-    max-width: 200px;
+    max-width: 220px;
+    height: fit-content;
     margin: 14px;
 }
 
@@ -101,38 +102,34 @@ footer {
     background-color: rgb(15, 15, 15);
     color: white;
     height: 100px;
-    text-align: center;
-    position:fixed;
+    width: 100%;
     right: 0;
-    bottom: 0;
-    left: 0;
-    width:100%;
-    bottom:0px;
-    margin-top:345px;
-  }
+}
   
-  footer h2 {
+footer h2 {
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 16px;
     padding-top: 40px;
-  }
+    text-align: center;
+}
 
 /* !!!!! MEDIA SCREEN SIZING SECTION !!!!! */
-  /* Media Query for Mobile Devices */
-  @media (max-width: 480px) {
-    header {
-        height: 113px;
-        width: 100%;
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1024px){
+    body {
+        background-color: blue;
     }
-    .title {
-        width: 80px;
+    #search {
+        width: 300px;
+    }
+    .out {
+        min-height: 800px;
     }
 }
-  
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 767px) {
     body {
-        background-color: yellow;
+        background-color: rgb(56, 56, 8);
         width: 100%;
     }
     ul.topnav li {
@@ -151,7 +148,6 @@ footer {
         background: rgb(40, 40, 40);
         width: 180px;
         margin-top: 66px;
-        margin-right: ;
     }
     ul.topnav.responsive li {
         display: inline-flex;
@@ -162,27 +158,22 @@ footer {
         text-align: right;
     }
     #search {
-        width: 100px;
+        width: 36%;
+    }
+    .out img {
+        display: flex;
+        margin: 14px;
+        max-width: none;
+        width: 100%;
     }
 }
-  
-/* Media Query for Tablets Ipads portrait mode */
-@media (max-width: 1024px){
-    body {
-        background-color: blue;
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    header {
+        height: 113px;
+        width: 100%;
     }
-    #search {
-        width: 300px;
+    .title {
+        width: 80px;
     }
-}
-  
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
-    body {
-        background-color: green;
-    }
-}
-  
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
 }
