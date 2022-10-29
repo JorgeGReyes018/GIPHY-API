@@ -56,7 +56,7 @@ nav li.trigram {
 div.searchdiv {
     color: white;
     text-align: center;
-    margin: 193px auto;
+    margin: 193px auto 100px;
 
 }
 
@@ -74,6 +74,18 @@ div.searchdiv {
     background-color: rgb(22, 58, 96);
     color: white;
     font-weight:400;
+}
+
+h4 {
+    margin-bottom: 40px;
+}
+ul.favs {
+    padding: 0;
+}
+
+ul.favs li{
+    display: inline;
+    margin: 40px;
 }
 
 /* !!!!! OUTPUT SECTION !!!!! */
@@ -116,9 +128,6 @@ footer h2 {
 /* !!!!! MEDIA SCREEN SIZING SECTION !!!!! */
 /* Media Query for Tablets Ipads portrait mode */
 @media (max-width: 1024px){
-    body {
-        background-color: blue;
-    }
     #search {
         width: 300px;
     }
@@ -128,10 +137,6 @@ footer h2 {
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 767px) {
-    body {
-        background-color: rgb(56, 56, 8);
-        width: 100%;
-    }
     ul.topnav li {
         display: none;
     }
@@ -159,6 +164,10 @@ footer h2 {
     }
     #search {
         width: 36%;
+    }
+    ul.favs li{
+        display: block;
+        margin: 20px;
     }
     .out img {
         display: flex;
