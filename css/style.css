@@ -95,7 +95,10 @@ ul.favs li {
   height: fit-content;
   margin: 14px;
 }
-
+#tempImg {
+  width: 80%;
+  max-width: 400px;
+}
 /* !!!!! FOOTER SECTION !!!!! */
 
 footer {
