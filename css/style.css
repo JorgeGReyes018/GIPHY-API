@@ -99,6 +99,11 @@ ul.favs li {
   width: 80%;
   max-width: 400px;
 }
+#poweredBy {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
 /* !!!!! FOOTER SECTION !!!!! */
 
 footer {
