@@ -1,6 +1,8 @@
 # Project-2-GIPHY-API
 This is the GIPHY API for project 2
 
+Live Github link: https://jorgegreyes018.github.io/Project-2-GIPHY-API/
+
 My name is Jorge G Reyes and this is my GIPHY API project for my bootcamp.
 
 People using this page of my project can search for gifs using GIPHY and can then navigate through my portfolio through the top. 
