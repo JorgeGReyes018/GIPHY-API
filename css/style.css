@@ -12,7 +12,7 @@ body {
 /* !!!!! NAVBAR/HEADER !!!!! */
 
 header {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(20, 20, 20);
   position: fixed;
   top: 0;
   display: flex;
@@ -39,7 +39,8 @@ nav li a {
   color: white;
 }
 nav li a:hover {
-  color: rgb(100, 127, 144);
+  color: rgb(61, 174, 72);
+  text-decoration: underline;
 }
 nav li.trigram {
   display: none;
