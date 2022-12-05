@@ -17,21 +17,45 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="title"><a href="https://jorgegreyes018.github.io/Project-1-Portfolio/#"><img
-                    src="images/portimgSM.png" alt="My Portfolio"></a></div>
-        <nav>
-            <ul class="topnav" id="trigramclick">
-                <li><a href="https://jorgegreyes018.github.io/Project-1-Portfolio/">Home</a></li>
-                <li><a href="https://jorgegreyes018.github.io/Project-1-Portfolio/about.html">About</a></li>
-                <li><a href="https://jorgegreyes018.github.io/Project-1-Portfolio/contact.html">Contact</a></li>
-                <li><a href="https://github.com/JorgeGReyes018" target="_blank">Github</a></li>
-                <li class="trigram">
-                    <a href="javascript:void(0)" onclick="dropdownmenu()">&#9776;</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar topnav navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-color2.png" alt="" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"
+                            href="https://jorgegreyes018.github.io/Project-1-Portfolio/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://jorgegreyes018.github.io/Project-1-Portfolio/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://jorgegreyes018.github.io/Project-1-Portfolio/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            My Works
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item"
+                                    href="https://jorgegreyes018.github.io/Project-2-GIPHY-API/">GIPHY API</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Online Cart App</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid searchdiv">
         <h2>Search your favorite GIF below using GIPHY API</h2>
         <form class="searchbar">
@@ -54,8 +78,18 @@
         <h2 id="poweredBy">Powered by GIPHY</h2>
     </div>
     <footer>
-        <div class="container-fluid">
+        <div class="leftfoot col-1"></div>
+        <div class="midfoot col-10">
             <h2>JorgeGReyes018@yahoo.com</h2>
+            <p>
+                <a href="https://icons8.com/icons/set/social-media">Social icons from Icons8</a>
+            </p>
+        </div>
+        <div class="righfoot col-1">
+            <a class="sociallogo" href="https://github.com/JorgeGReyes018" target="”_blank”"><img
+                    src="images/githublogo.png" alt="Github Logo" /></a>
+            <a class="sociallogo" href="https://www.instagram.com/yoyidesigns/?hl=en" target="”_blank”"><img
+                    src="images/instalogo.png" alt="Instagram Logo" /></a>
         </div>
     </footer>
     <!-- Javascript -->
