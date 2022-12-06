@@ -152,6 +152,16 @@ ul.favs li {
   .out {
     min-height: 800px;
   }
+  .midfoot {
+    max-width: 20%;
+  }
+  footer h2,
+  footer p {
+  font-size: .7rem;
+  }
+  footer p a {
+  font-size: 8px;
+  }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 767px) {
@@ -191,6 +201,34 @@ ul.favs li {
     display: flex;
     margin: 14px;
     max-width: none;
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftfoot {
+    display: none;
+  }
+  .rightfoot {
+    margin: 10px auto;
+  }
+  .rightfoot,
+  .midfoot {
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    margin: auto;
+  }
+  .sociallogo {
+    margin: auto;
+  }
+  .right {
+    width: 86%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .col-1 {
     width: 100%;
   }
 }
