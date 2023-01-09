@@ -1,5 +1,5 @@
-# Project-2-GIPHY-API
-This is the GIPHY API for project 2
+# GIPHY-API
+This is my GIPHY API using JavaScript
 
 Live Github link: https://jorgegreyes018.github.io/Project-2-GIPHY-API/
 
